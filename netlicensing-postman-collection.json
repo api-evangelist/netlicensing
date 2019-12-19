@@ -1,0 +1,2009 @@
+{
+    "id": "98891864df9e1bc28c23f0b68731e812",
+    "name": "NetLicensing",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "7bc61eaf56a542b443d68f8082973f1c",
+            "name": "Licenses list",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/license",
+            "description": "Return a list of all licenses for the current vendor",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "e802f0054071dacd8e5bc6c3513aae9e",
+            "name": "Create license",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/license",
+            "description": "Creates a new license",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseeNumber",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseTemplateNumber",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name for the licensed item. Set from license template on creation, if not specified explicitly.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "parentfeature",
+                    "description": "Mandatory for 'TIMEVOLUME' license type and 'RENTAL' licensing model",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeVolume",
+                    "description": "Mandatory for 'TIMEVOLUME' license type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "Mandatory for 'TIMEVOLUME' license type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "price",
+                    "description": "Price for the license. If >0, it must always be accompanied by the currency specification. Read-only, set from license template on creation",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "currency",
+                    "description": "Specifies currency for the license price. Check data types to discover which currencies are supported. Read-only, set from license template on creation",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hidden",
+                    "description": "If set to 'true', this license is not shown in NetLicensing Shop as purchased license. Set from license template on creation, if not specified explicitly",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "066b2a9d4f8680f46e20650fb6630073",
+            "name": "Delete license",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/license\/{licenseNumber}",
+            "description": "Delete license by a licenseNumber",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseNumber",
+                    "description": "Unique number (across all products\/licensees of a vendor) that identifies the license. Vendor can assign this number when creating a license or let NetLicensing generate one. Read-only after corresponding creation transaction status is set to closed.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "2593d41a5e98206e77ffb60daebf23ce",
+            "name": "Get license",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/license\/{licenseNumber}",
+            "description": "Get license by a licenseNumber",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseNumber",
+                    "description": "Unique number (across all products\/licensees of a vendor) that identifies the license. Vendor can assign this number when creating a license or let NetLicensing generate one. Read-only after corresponding creation transaction status is set to closed.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e82d443c2cb0f2ace169788454f1a61",
+            "name": "Update license",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/license\/{licenseNumber}",
+            "description": "Update license by a licenseNumber",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseNumber",
+                    "description": "Unique number (across all products\/licensees of a vendor) that identifies the license. Vendor can assign this number when creating a license or let NetLicensing generate one. Read-only after corresponding creation transaction status is set to closed.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name for the licensed item. Set from license template on creation, if not specified explicitly.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "Mandatory for 'TIMEVOLUME' license type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "parentfeature",
+                    "description": "Mandatory for 'TIMEVOLUME' license type and 'RENTAL' licensing model",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeVolume",
+                    "description": "Mandatory for 'TIMEVOLUME' license type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "price",
+                    "description": "Price for the license. If >0, it must always be accompanied by the currency specification. Read-only, set from license template on creation",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "currency",
+                    "description": "Specifies currency for the license price. Check data types to discover which currencies are supported. Read-only, set from license template on creation",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hidden",
+                    "description": "If set to 'true', this license is not shown in NetLicensing Shop as purchased license. Set from license template on creation, if not specified explicitly",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "201a29964609516db2d8b937e7240b42",
+            "name": "Licensees list",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensee",
+            "description": "Return a list of all licensees for the current vendor",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "34bcdd76f3a4cf71c6b2648a87ccb902",
+            "name": "Create licensee",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensee",
+            "description": "Creates a new licensee",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "productNumber",
+                    "description": "productNumber to assign new licensee object",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name for the licensed item. Set from license template on creation, if not specified explicitly.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseeSecret",
+                    "description": "Licensee Secret for licensee.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "markedForTransfer",
+                    "description": "Mark licensee for transfer.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "3a6768e312e5e81aa4e62908d71dc9c5",
+            "name": "Delete licensee",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}",
+            "description": "Delete a licensee by number",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseeNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the licensee.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "forceCascade",
+                    "description": "Force object deletion and all descendants.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "b345441ca6d74da94c1c81b83141a9dd",
+            "name": "Get licensee",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}",
+            "description": "Return a licensee by licenseeNumber",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseeNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the licensee.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "9ffbfacebb2eafeb5d89983a59ecc197",
+            "name": "Update licensee",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}",
+            "description": "Sets the provided properties to a licensee. Return an updated licensee",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseeNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the licensee.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name for the licensed item. Set from license template on creation, if not specified explicitly.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseeSecret",
+                    "description": "Licensee Secret for licensee.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "markedForTransfer",
+                    "description": "Mark licensee for transfer.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "3dc1457debf1176ee0c1503ae7ff0556",
+            "name": "Transfer licenses",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}\/transfer",
+            "description": "Licenses transfer between licensees",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseeNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the licensee.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceLicenseeNumber",
+                    "description": "Licensee number which licenses to be transferred",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "bfece63663aee2cd053b8ec0dd3b2281",
+            "name": "Validate licensee",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}\/validate",
+            "description": "Validates active licenses of the licensee",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseeNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the licensee.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "productNumber",
+                    "description": "productNumber to assign new licensee object",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseeName",
+                    "description": "Human-readable name for the auto-created licensee (will be set as custom Licensee property)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseeSecret",
+                    "description": "Licensee Secret for licensee.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "72f2ed12db23857c5a94d6f65cc37c80",
+            "name": "Validate licensee",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}\/validate",
+            "description": "Validates active licenses of the licensee",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseeNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the licensee.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "productNumber",
+                    "description": "Product number, must be provided when 'licensee auto-create' is enabled (see also Product JavaDoc). Identifies the product to which new licensee should be added",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseeName",
+                    "description": "Human-readable name for the auto-created licensee (will be set as custom Licensee property)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "b3144f50f7d09a59be4301415e34bed9",
+            "name": "License Templates list",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensetemplate",
+            "description": "Return a list of all license templates for the current vendor",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "7a737a745e39b97cf14df254b62922d7",
+            "name": "Create license template",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensetemplate",
+            "description": "Creates a new license template",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "productModuleNumber",
+                    "description": "Number of product module to ?reate license template object",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name for the licensed item. Set from license template on creation, if not specified explicitly.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseType",
+                    "description": "type of licenses created from this license template. Supported types: FEATURE, TIMEVOLUME",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeVolume",
+                    "description": "Mandatory for 'TIMEVOLUME' license type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxSessions",
+                    "description": "Mandatory for 'FLOATING' license type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "price",
+                    "description": "Price for the license. If >0, it must always be accompanied by the currency specification. Read-only, set from license template on creation",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "currency",
+                    "description": "Specifies currency for the license price. Check data types to discover which currencies are supported. Read-only, set from license template on creation",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "automatic",
+                    "description": "If set to 'true', every new licensee automatically gets one license out of this license template on creation. Automatic licenses must have their price set to 0.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hidden",
+                    "description": "If set to 'true', this license is not shown in NetLicensing Shop as purchased license. Set from license template on creation, if not specified explicitly",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hideLicenses",
+                    "description": "If set to 'true', licenses from this license template are not visible to the end customer, but participate in validation.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c5048a501665a95ede54033f2ef9819",
+            "name": "Delete license template",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensetemplate\/{licenseTemplateNumber}",
+            "description": "Delete a license template by number.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseTemplateNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the license template.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "forceCascade",
+                    "description": "Force object deletion and all descendants.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "9bb1f158a5007221de9c7bf5d88b62ca",
+            "name": "Get license template",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensetemplate\/{licenseTemplateNumber}",
+            "description": "Return a license template by licenseTemplateNumber",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseTemplateNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the license template.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "3edad01efade8a84ae6c577ea88de338",
+            "name": "Update license template",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/licensetemplate\/{licenseTemplateNumber}",
+            "description": "Sets the provided properties to a license template. Return an updated license template",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseTemplateNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the license template.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name for the licensed item. Set from license template on creation, if not specified explicitly.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseType",
+                    "description": "type of licenses created from this license template. Supported types: FEATURE, TIMEVOLUME",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeVolume",
+                    "description": "Mandatory for 'TIMEVOLUME' license type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxSessions",
+                    "description": "Mandatory for 'FLOATING' license type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "price",
+                    "description": "Price for the license. If >0, it must always be accompanied by the currency specification. Read-only, set from license template on creation",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "currency",
+                    "description": "Specifies currency for the license price. Check data types to discover which currencies are supported. Read-only, set from license template on creation",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "automatic",
+                    "description": "If set to 'true', every new licensee automatically gets one license out of this license template on creation. Automatic licenses must have their price set to 0.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hidden",
+                    "description": "If set to 'true', this license is not shown in NetLicensing Shop as purchased license. Set from license template on creation, if not specified explicitly",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hideLicenses",
+                    "description": "If set to 'true', licenses from this license template are not visible to the end customer, but participate in validation.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "d04b69d79463b3f310b402d82e7f245b",
+            "name": "Payment Methods list",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/paymentmethod",
+            "description": "Return a list of all payment methods for the current vendor",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "8a2bf851928056249e8ebef8c384f85a",
+            "name": "Get payment method",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/paymentmethod\/{paymentMethodNumber}",
+            "description": "Return a payment method info by paymentMethodNumber",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "paymentMethodNumber",
+                    "description": "Payment method number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "092f9d955676a0676d526b3815796641",
+            "name": "Update payment method",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/paymentmethod\/{paymentMethodNumber}",
+            "description": "Sets the provided properties to a payment method. Return an updated payment method",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "paymentMethodNumber",
+                    "description": "Payment method number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "paypal.subject",
+                    "description": "The e-mail address of the PayPal account for which you are making the API calls.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "b52fb9e07569c75e981e7b7238ea089d",
+            "name": "Products list",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/product",
+            "description": "Return a list of all configured products for the current vendor",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "29725581ec238b9dfaa9e82eee866ffd",
+            "name": "Create product",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/product",
+            "description": "Creates a new product",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name for the licensed item. Set from license template on creation, if not specified explicitly.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "Product version. Convenience parameter, additional to the product name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseeAutoCreate",
+                    "description": "If set to 'true', non-existing licensees will be created at first validation attempt.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "Product description.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licensingInfo",
+                    "description": "Licensing information.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseeSecretMode",
+                    "description": "Licensee secret mode for product. Supported types: DISABLED, PREDEFINED, CLIENT",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vatMode",
+                    "description": "Vat mode for product. Supported types: GROSS, NET",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "4fc3adc5faa0cf8e8d81649c39388842",
+            "name": "Delete product",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/product\/{productNumber}",
+            "description": "Delete a product by number",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "productNumber",
+                    "description": "Unique number that identifies the product.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "forceCascade",
+                    "description": "Force object deletion and all descendants.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ca329a288a29e3d893a92df5ed82914",
+            "name": "Get product",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/product\/{productNumber}",
+            "description": "Return a product by productNumber",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "productNumber",
+                    "description": "Unique number that identifies the product.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "ff31770427a90d8c09298c00fc15b26f",
+            "name": "Update product",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/product\/{productNumber}",
+            "description": "Sets the provided properties to a product. Return an updated product",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "productNumber",
+                    "description": "Unique number that identifies the product.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name for the licensed item. Set from license template on creation, if not specified explicitly.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "Product version. Convenience parameter, additional to the product name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseeAutoCreate",
+                    "description": "If set to 'true', non-existing licensees will be created at first validation attempt.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "description",
+                    "description": "Product description.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licensingInfo",
+                    "description": "Licensing information.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseeSecretMode",
+                    "description": "Licensee secret mode for product. Supported types: DISABLED, PREDEFINED, CLIENT",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vatMode",
+                    "description": "Vat mode for product. Supported types: GROSS, NET",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "9cd5c23026dd4ec3141ac8cceb3ee3c5",
+            "name": "Product Modules list",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/productmodule",
+            "description": "Return a list of all product modules for the current vendor",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "6ad90591ba819b3363ba463061f7d3cf",
+            "name": "Create product module",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/productmodule",
+            "description": "Creates a new product module",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "productNumber",
+                    "description": "productNumber to assign new licensee object",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name for the licensed item. Set from license template on creation, if not specified explicitly.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licensingModel",
+                    "description": "Licensing model applied to this product module. Defines what license templates can be configured for the product module and how licenses for this product module are processed during validation.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxCheckoutValidity",
+                    "description": "Maximum checkout validity (days). Mandatory for 'Floating' licensing model.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "yellowThreshold",
+                    "description": "Remaining time volume for yellow level. Mandatory for 'Rental' licensing model.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "redThreshold",
+                    "description": "Remaining time volume for red level. Mandatory for 'Rental' licensing model.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseTemplate",
+                    "description": "License template. Mandatory for 'Try &amp; Buy' licensing model.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "b26dc50448cfbd98fbcac90c702b3588",
+            "name": "Delete product module",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/productmodule\/{productModuleNumber}",
+            "description": "Delete a product module by number",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "productModuleNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the product module.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "forceCascade",
+                    "description": "Force object deletion and all descendants.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "73ee06d7431fca9e8e75ab31dd1701b2",
+            "name": "Get product module",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/productmodule\/{productModuleNumber}",
+            "description": "Return a product module by productModuleNumber",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "productModuleNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the product module.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "f67f5d03b37af4334179d94a61cc2fcb",
+            "name": "Update product module",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/productmodule\/{productModuleNumber}",
+            "description": "Sets the provided properties to a product module. Return an updated product module",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "productModuleNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the product module.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Name for the licensed item. Set from license template on creation, if not specified explicitly.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licensingModel",
+                    "description": "Licensing model applied to this product module. Defines what license templates can be configured for the product module and how licenses for this product module are processed during validation.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxCheckoutValidity",
+                    "description": "Maximum checkout validity (days). Mandatory for 'Floating' licensing model.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "yellowThreshold",
+                    "description": "Remaining time volume for yellow level. Mandatory for 'Rental' licensing model.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "redThreshold",
+                    "description": "Remaining time volume for red level. Mandatory for 'Rental' licensing model.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseTemplate",
+                    "description": "License template. Mandatory for 'Try &amp; Buy' licensing model.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "81899c6dc3aa0d01b8c2beff0c23f17a",
+            "name": "Tokens list",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/token",
+            "description": "Return a list of all tokens for the current vendor",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "ee0e79c8a40f083b29de4f049e7aa8e2",
+            "name": "Create token",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/token",
+            "description": "Create token by tokenType and additional token parameters",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tokenType",
+                    "description": "Token type to be generated",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "licenseeNumber",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "successURL",
+                    "description": "for <i>tokenType=SHOP<\/i> only; take customers to this URL when they finish checkout",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "successURLTitle",
+                    "description": "for <i>tokenType=SHOP<\/i> only; shop link title for successful checkout process",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "cancelURL",
+                    "description": "for <i>tokenType=SHOP<\/i> only; take customers to this URL when they cancel their checkout",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "cancelURLTitle",
+                    "description": "for <i>tokenType=SHOP<\/i> only; shop link title for cancel checkout process",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "e371b5724ecf70884e936c25e95882b6",
+            "name": "Delete token",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/token\/{tokenNumber}",
+            "description": "Delete a token by number",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tokenNumber",
+                    "description": "Token number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "d263cb6d21be079f143cc0c8d28d9b30",
+            "name": "Get token",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/token\/{tokenNumber}",
+            "description": "Return a token by tokenNumber",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tokenNumber",
+                    "description": "Token number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "93eb58a0a3ecd60e9122c275853682b8",
+            "name": "Transactions list",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/transaction",
+            "description": "Return a list of all transactions for the current vendor",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "650eb027fc14775f264e3b2b603859ed",
+            "name": "Create transaction",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/transaction",
+            "description": "Creates a new transaction",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "licenseeNumber",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source",
+                    "description": "AUTO transaction for internal use only",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateCreated",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateClosed",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "paymentMethod",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "c3f7f5580523ce15c708f3bd64983e3f",
+            "name": "Get transaction ",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/transaction\/{transactionNumber}",
+            "description": "Return a transaction by transactionNumber",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "transactionNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the transaction",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "f22c2df03d3b8e4d1edff2b123de1fcc",
+            "name": "Update transaction",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/transaction\/{transactionNumber}",
+            "description": "Sets the provided properties to a transaction. Return an updated transaction",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "transactionNumber",
+                    "description": "Unique number (across all products of a vendor) that identifies the transaction",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "number",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "source",
+                    "description": "AUTO transaction for internal use only",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateCreated",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateClosed",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "paymentMethod",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "b4830ea717b0d75fe15325cf8220ae47",
+            "name": "License Types list",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/utility\/licenseTypes",
+            "description": "Return a list of all license types supported by the service",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        },
+        {
+            "id": "b4d3e5d139e1c92e9dd9f8112b301abf",
+            "name": "Licensing Models list",
+            "url": "httpsgo.netlicensing.io\/core\/v2\/rest\/utility\/licensingModels",
+            "description": "Return a list of all licensing models supported by the service",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "98891864df9e1bc28c23f0b68731e812",
+            "rawModeData": ""
+        }
+    ]
+}
