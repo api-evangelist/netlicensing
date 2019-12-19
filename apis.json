@@ -1,0 +1,88 @@
+{
+    "name": "NetLicensing",
+    "description": "<p>Labs64 NetLicensing is a first-class solution in the Licensing-as-a-Service (LaaS) sector. Based on open standards, it provides a cost effective, integrated and scalable platform for software vendors and developers who want to concentrate on their product&rsquo;s core functionality instead of spending resources on developing an own license management software.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28466-labs64-net-licensing-restful-api-test-center.jpg",
+    "tags": [
+        "api provider",
+        "api service provider",
+        "have api",
+        "have swagger",
+        "licensing",
+        "monetization",
+        "relative data",
+        "service api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/netlicensing\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Labs64 NetLicensing RESTful API Test Center",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28466-labs64-net-licensing-restful-api-test-center.jpg",
+            "humanURL": "http:\/\/netlicensing.io",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/labs64-netlicensing-restful-api-test-center-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/labs64-netlicensing-restful-api-test-center.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/labs64-netlicensing-restful-api-test-center-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "NetLicensing",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28466-labs64-net-licensing-restful-api-test-center.jpg",
+            "humanURL": "http:\/\/netlicensing.io",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/netlicensing-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/netlicensing.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/netlicensing-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Getting Started",
+            "url": "https:\/\/netlicensing.io\/getting-started\/"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28466-2019-09-04-11-07-02.json"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/netlicensing.io\/pricing\/"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/netlicensing"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/netlicensing.io"
+        }
+    ]
+}
