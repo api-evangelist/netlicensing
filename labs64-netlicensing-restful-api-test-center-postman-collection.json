@@ -1,5 +1,5 @@
 {
-    "id": "a1899d0e312d047c4164bb1a0612d99a",
+    "id": "ac0f247aa4d9436d53cf5cf7518fd25b",
     "name": "Labs64 NetLicensing RESTful API Test Center",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "9fb3258d267cc7e36d64236c9e7e51c9",
+            "id": "692e427fb6cc44a35001363f90693028",
             "name": "Licenses list",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/license",
             "description": "Return a list of all licenses for the current vendor",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "ba53510eef11938c031aaa1a8ecae332",
+            "id": "225cb0e3183e687d6a51870eb433102a",
             "name": "Create license",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/license",
             "description": "Creates a new license",
@@ -151,11 +151,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "3432b148b86a4ad847adfbbc5afc991a",
+            "id": "d5f6a4b50ec19f1c103db0474bbbc51d",
             "name": "Delete license",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/license\/{licenseNumber}",
             "description": "Delete license by a licenseNumber",
@@ -182,11 +182,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "f027c7ed3be3effadb33c0069ddd6086",
+            "id": "1821abd4ce1a4f418892795a40476746",
             "name": "Get license",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/license\/{licenseNumber}",
             "description": "Get license by a licenseNumber",
@@ -213,11 +213,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "084a7ef606a285abb23ab1437436c106",
+            "id": "0a1bfee38d2ad5da925a337ff7dee5b1",
             "name": "Update license",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/license\/{licenseNumber}",
             "description": "Update license by a licenseNumber",
@@ -328,11 +328,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "a6d21b7ec211c9645114460c859ef528",
+            "id": "9fdaf21ee905264991e169c5a00dfb72",
             "name": "Licensees list",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensee",
             "description": "Return a list of all licensees for the current vendor",
@@ -351,11 +351,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "8b11b16b27862f2c0952b931d3a28578",
+            "id": "ac436caf554fcbae82bfabb3a67748c6",
             "name": "Create licensee",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensee",
             "description": "Creates a new licensee",
@@ -417,11 +417,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "8fcb2a4ccec669444043cdb66e426ae3",
+            "id": "aa51b6ec04184e60a069f98a90ec277f",
             "name": "Delete licensee",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}",
             "description": "Delete a licensee by number",
@@ -455,11 +455,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "d3f8d71f3ffa48e90bbdda0384adaa76",
+            "id": "c329dd63f48df0783e80f244884de04c",
             "name": "Get licensee",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}",
             "description": "Return a licensee by licenseeNumber",
@@ -486,11 +486,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "f465a7df827fb193325d45c1ccf22f35",
+            "id": "5e21665927279bad764e07f06abafc75",
             "name": "Update licensee",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}",
             "description": "Sets the provided properties to a licensee. Return an updated licensee",
@@ -552,11 +552,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "20ef276ed7422ee37eeab9406ff0f17e",
+            "id": "faecca516c9d3f97ee77be277f8bf890",
             "name": "Transfer licenses",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}\/transfer",
             "description": "Licenses transfer between licensees",
@@ -590,11 +590,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "bdcbc6b82486ccdc7afcec91504f3c4e",
+            "id": "9e31047a98599a1987493cb916f5cb3c",
             "name": "Validate licensee",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensee\/{licenseeNumber}\/validate",
             "description": "Validates active licenses of the licensee",
@@ -642,11 +642,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "e8a804fc8e3c028057067e6dcd98eadc",
+            "id": "3b11213bf6b719081a37b9555de6840f",
             "name": "License Templates list",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensetemplate",
             "description": "Return a list of all license templates for the current vendor",
@@ -665,11 +665,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "9a7d57f2de26de75dcb72b0e5d2f41a6",
+            "id": "37b471946c906888a7a835712b16b6ac",
             "name": "Create license template",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensetemplate",
             "description": "Creates a new license template",
@@ -787,11 +787,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "e63369a0879cf22ad1c572d752f9014f",
+            "id": "ac4857d248edff89710cf84d67b87928",
             "name": "Delete license template",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensetemplate\/{licenseTemplateNumber}",
             "description": "Delete a license template by number.",
@@ -825,11 +825,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "a6eb54de1082006aa27f8c05794dee6f",
+            "id": "035d443b5a2d6aa42ed4e8e5376a8121",
             "name": "Get license template",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensetemplate\/{licenseTemplateNumber}",
             "description": "Return a license template by licenseTemplateNumber",
@@ -856,11 +856,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "b3f63e21f2371f3a46c0e4d33a961c3d",
+            "id": "4942a5153692a46a1238cfb400b22e53",
             "name": "Update license template",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/licensetemplate\/{licenseTemplateNumber}",
             "description": "Sets the provided properties to a license template. Return an updated license template",
@@ -978,11 +978,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "c20f3a5c8a94e9ff2ba62ee718001a48",
+            "id": "2bcd7fdf32bd84d9522f2ca371a8825f",
             "name": "Payment Methods list",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/paymentmethod",
             "description": "Return a list of all payment methods for the current vendor",
@@ -1001,11 +1001,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "35a8d7db7ac5f5aa8f016b9638fbb2a1",
+            "id": "acfda95215617694e84f6b3d499ba05e",
             "name": "Get payment method",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/paymentmethod\/{paymentMethodNumber}",
             "description": "Return a payment method info by paymentMethodNumber",
@@ -1032,11 +1032,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "bf0a28e0796a2d2fc58efc8d1f0acfba",
+            "id": "a3633ef870b41d612f0a6e891839ee4f",
             "name": "Update payment method",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/paymentmethod\/{paymentMethodNumber}",
             "description": "Sets the provided properties to a payment method. Return an updated payment method",
@@ -1077,11 +1077,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "54cdf1a802b70301c5d26916c3d67d0e",
+            "id": "e6485987c11457eea14b8f0b57e44ad6",
             "name": "Products list",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/product",
             "description": "Return a list of all configured products for the current vendor",
@@ -1100,11 +1100,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "1f793175658c6b9f9af110f54b95b913",
+            "id": "31afd37d54556ee717e97f13637340c2",
             "name": "Create product",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/product",
             "description": "Creates a new product",
@@ -1187,11 +1187,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "15a185bc4f55ecf273b2b7c1923ee0f8",
+            "id": "0458e35935be4b45353e65afb59c8f5e",
             "name": "Delete product",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/product\/{productNumber}",
             "description": "Delete a product by number",
@@ -1225,11 +1225,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "5d8027771bfa517fd5ad92c1484bc30f",
+            "id": "bba3a1eafe84c6c2813e617165c35a96",
             "name": "Get product",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/product\/{productNumber}",
             "description": "Return a product by productNumber",
@@ -1256,11 +1256,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "93954c6f0d83f4a99ae21968cec37ca0",
+            "id": "8eb5d0dc405ce78602db5f3c831278ef",
             "name": "Update product",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/product\/{productNumber}",
             "description": "Sets the provided properties to a product. Return an updated product",
@@ -1350,11 +1350,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "28e47f09205b2b7fd79d4735a9540d46",
+            "id": "090120eaf64945e92f7c54cbcacb1ab4",
             "name": "Product Modules list",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/productmodule",
             "description": "Return a list of all product modules for the current vendor",
@@ -1373,11 +1373,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "7e2283d49b09bd973fd81e3c267db6e6",
+            "id": "146a9cc0c945a06d1ce814a6e84088c2",
             "name": "Create product module",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/productmodule",
             "description": "Creates a new product module",
@@ -1460,11 +1460,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "48873f71d284584fda936cb21c0a447f",
+            "id": "11d9a421882e73b24cf9f9730151db06",
             "name": "Delete product module",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/productmodule\/{productModuleNumber}",
             "description": "Delete a product module by number",
@@ -1498,11 +1498,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "1a0e3737fa5d2ca3be479526d6a805ad",
+            "id": "ff354d27819888fba52fe40ae8225bc1",
             "name": "Get product module",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/productmodule\/{productModuleNumber}",
             "description": "Return a product module by productModuleNumber",
@@ -1529,11 +1529,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "4482dace6e539df004a15dba2b8ee4f4",
+            "id": "0246ff568d84f434cdce8c5961a07f63",
             "name": "Update product module",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/productmodule\/{productModuleNumber}",
             "description": "Sets the provided properties to a product module. Return an updated product module",
@@ -1616,11 +1616,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "2dc49e02f0505f6f69c277572a76117d",
+            "id": "9c22a299828ee6312ecda7ceb541593d",
             "name": "Tokens list",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/token",
             "description": "Return a list of all tokens for the current vendor",
@@ -1639,11 +1639,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "d9482eaf5c7749e74acc7870a0126c38",
+            "id": "df76396da3fbb4f1b5bfd4421694e4c4",
             "name": "Create token",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/token",
             "description": "Create token by tokenType and additional token parameters",
@@ -1705,11 +1705,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "77450be397a2f1a225a0f62fd454af66",
+            "id": "c3ee7e1686a5047830d6d4a44cbb9245",
             "name": "Delete token",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/token\/{tokenNumber}",
             "description": "Delete a token by number",
@@ -1736,11 +1736,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "48c8e0e0c3936a4b14957f9b6e57136f",
+            "id": "ab277c2fd64517d3363ce64b51dc8dea",
             "name": "Get token",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/token\/{tokenNumber}",
             "description": "Return a token by tokenNumber",
@@ -1767,11 +1767,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "7048a1481ea3438d603d3c6f6df674af",
+            "id": "323ebc2a9be68bdcc7632f1ac8dc233e",
             "name": "Transactions list",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/transaction",
             "description": "Return a list of all transactions for the current vendor",
@@ -1790,11 +1790,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "2e3c9818c7b0ac3e7ee87ae3008338ec",
+            "id": "b5886e2c2d0f0eba6fd47a25af769c91",
             "name": "Create transaction",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/transaction",
             "description": "Creates a new transaction",
@@ -1870,11 +1870,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "29b0356395bdc03389f2b7a7f8dc8a69",
+            "id": "69483f5493cd756f67d3131719d0089f",
             "name": "Get transaction ",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/transaction\/{transactionNumber}",
             "description": "Return a transaction by transactionNumber",
@@ -1901,11 +1901,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "2996d88729fc6711210f1c6b468af37b",
+            "id": "af0dda56eb3fb81bb915aa40eb199f68",
             "name": "Update transaction",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/transaction\/{transactionNumber}",
             "description": "Sets the provided properties to a transaction. Return an updated transaction",
@@ -1981,11 +1981,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "8871f2832c715aef471b4ca0e92d856c",
+            "id": "7bf6fab8c8e0c8b8bdbff804b3f829ac",
             "name": "License Types list",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/utility\/licenseTypes",
             "description": "Return a list of all license types supported by the service",
@@ -2004,11 +2004,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         },
         {
-            "id": "27a70345c54128d962f60d79e9cdb9cc",
+            "id": "5189e4d96e7b1c6d43bf4e4cf64844e6",
             "name": "Licensing Models list",
             "url": "http:\/\/go.netlicensing.io\/core\/v2\/rest\/utility\/licensingModels",
             "description": "Return a list of all licensing models supported by the service",
@@ -2027,7 +2027,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a1899d0e312d047c4164bb1a0612d99a",
+            "collectionId": "ac0f247aa4d9436d53cf5cf7518fd25b",
             "rawModeData": ""
         }
     ]
