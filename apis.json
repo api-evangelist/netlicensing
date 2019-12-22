@@ -12,8 +12,8 @@
         "relative data",
         "service api"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/netlicensing\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -27,15 +27,11 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/labs64-netlicensing-restful-api-test-center-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/netlicensing\/master\/labs64-netlicensing-restful-api-test-center-openapi.json"
                 },
                 {
                     "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/labs64-netlicensing-restful-api-test-center.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/labs64-netlicensing-restful-api-test-center-postman-collection.json"
                 }
             ]
         },
@@ -49,21 +45,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/netlicensing-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/netlicensing\/master\/netlicensing-openapi.json"
                 },
                 {
                     "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/netlicensing.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/netlicensing-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Getting Started",
             "url": "https:\/\/netlicensing.io\/getting-started\/"
